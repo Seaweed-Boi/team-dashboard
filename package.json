@@ -1,0 +1,16 @@
+{
+  "name": "team-dashboard",
+  "version": "1.0.0",
+  "description": "Team Decision Board - A MERN application",
+  "main": "server.js",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "backend": "cd backend && npm run dev",
+    "install-all": "npm install && npm --prefix frontend install && npm --prefix backend install"
+  },
+  "keywords": ["team", "dashboard", "decision", "board"],
+  "author": "",
+  "license": "MIT"
+}

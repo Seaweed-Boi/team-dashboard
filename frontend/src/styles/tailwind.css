@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-dark-bg text-white font-sans;
+  }
+
+  button {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary hover:bg-primary-dark text-dark-bg font-semibold rounded-lg transition-all duration-300 hover:shadow-glow;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-dark-bg font-semibold rounded-lg transition-all duration-300;
+  }
+
+  .btn-icon {
+    @apply p-2 hover:bg-dark-tertiary rounded-lg transition-all duration-300;
+  }
+
+  .card-glass {
+    @apply bg-dark-secondary/40 backdrop-blur-md border border-primary/20 rounded-xl p-6 hover:border-primary/40 transition-all duration-300;
+  }
+
+  .input-glass {
+    @apply bg-dark-secondary/50 border border-primary/30 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:shadow-glow transition-all duration-300;
+  }
+
+  .heading-gradient {
+    @apply text-white;
+    background: linear-gradient(135deg, #ffffff 0%, #00BFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-text {
+    @apply text-primary drop-shadow-lg;
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00BFFF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1E90FF;
+}
