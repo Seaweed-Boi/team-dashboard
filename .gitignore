@@ -5,6 +5,7 @@ node_modules/
 .env
 .env.local
 .env.*.local
+*.env
 
 # Logs
 logs
@@ -29,14 +30,13 @@ Thumbs.db
 *.sln
 *.sw?
 
+# Build output
+dist
+dist-ssr
+build
+
 # Optional npm cache directory
 .npm
 
 # Optional eslint cache
 .eslintcache
-
-# Production
-dist
-build
-
-.env
